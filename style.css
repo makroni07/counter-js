@@ -1,0 +1,12 @@
+#judul {
+	text-align: center;
+	margin-top: 250px;
+	font-size: 175%;
+	color: white;
+
+}
+
+body {
+	background: url(clock.jpg);
+	background-size: 1500px;
+}

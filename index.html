@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="icon" type="img/png" href="icon.ico">
+</head>
+<body>
+<div id="judul">
+	<h1 id="judul">ANGKA APAYANG KAMU INGINKAN?</h1>
+	<h2 id="subjudul">0</h2>
+
+	<button type="button" class="btn btn-secondary" id="plus-button">Plus</button>
+	<button type="button" class="btn btn-secondary" id="minus-button">Minus</button>
+	
+</div>
+	<script>
+		var number = 0;
+		var judulDOM = document.getElementById('judul')
+		var subjudulDOM = document.getElementById('subjudul')
+
+		var plusButtonDOM = document.getElementById('plus-button')
+		var minusButtonDOM = document.getElementById('minus-button')
+
+		var nama = prompt("SIAPA NAMAMU?")
+		console.log(nama)
+
+
+		plusButtonDOM.addEventListener('click', function(){
+			console.log("NILAI NUMBER SEKARANG: " + number)
+			console.log('tombol plus diklik')
+			number = number + 1;
+			console.log("NILAI NUMBER SEKARANG: " + number)
+			subjudulDOM.innerHTML = number
+		})
+
+		minusButtonDOM.addEventListener('click', function(){
+			console.log("NILAI NUMBER SEKARANG: " + number)
+			console.log('tombol plus diklik')
+			number = number - 1;
+			console.log("NILAI NUMBER SEKARANG: " + number)
+			subjudulDOM.innerHTML = number
+		})
+		</script>
+
+</body>
+</html>
